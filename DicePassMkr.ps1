@@ -6,7 +6,7 @@
 ###################################################################
 
 # Variables
-$Wordlist = '<Repository_Location>\DicePassGen\Wordlist.csv'
+$Wordlist = ‘<Path_of_the_script>\DicePassGen\Wordlist.csv’
 
 # Import the CSV file containing the words
 $Words = Import-CSV -Path $Wordlist -Delimiter ";" -Header ID, Word
