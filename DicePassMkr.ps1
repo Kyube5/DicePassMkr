@@ -1,5 +1,5 @@
 ###################################################################
-# Script Name	 : DicePassGen.ps1                                                                                              
+# Script Name	 : DicePassMkr.ps1                                                                                              
 # Description	 : Strong password generation script based on EFF Dice-Generated Passphrases (between 11 & 23 characters)                                                                                                                                                                      
 # Author       : Quentin BELKACEM                                               
 # Email        : quentin.belkacem@gmail.com                                           
