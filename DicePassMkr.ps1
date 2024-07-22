@@ -1,19 +1,19 @@
 ###################################################################
-# Script Name	 : DicePassMkr.ps1                                                                                              
-# Description	 : Strong password generation script based on EFF Dice-Generated Passphrases (between 11 & 23 characters)                                                                                                                                                                      
-# Author       : Quentin BELKACEM                                               
-# Email        : quentin.belkacem@gmail.com                                           
+# Script Name	 : DicePassMkr.ps1
+# Description	 : Strong password generation script based on EFF Dice-Generated Passphrases (between 11 & 23 characters)
+# Author        : Quentin BELKACEM
+# Email         : quentin.belkacem@gmail.com
 ###################################################################
 
 # Variables
-$Wordlist = "<Path_of_the_script>\DicePassMkr\Wordlist.csv"
+$Wordlist = "<Path_of_the_script>\DicePassMkr\eff_large_wordlist.csv"
 
 Write-Host -ForegroundColor DarkCyan @"
 
-  8OOo.                8OOo.                   8OoO.
+  8OOo.                8OOo.                   8o.o8
   8   8  8 .oOo. .oOo. 8   O .oOo. oOOOo oOOOo 8 8 8 8  8 8OOo.
-  8   8  8 8     8ooo  8ooO' 8ooo8 'Ooo, 'Ooo, 8 8 8 8oo  8ooo'
-  8OOo'  8 'OoO' 'OoO' 8     8   8 Oooo0 Oooo0 8 8 8 8  8 8   8
+  8   8  8 8     8oo   8ooO' 8ooo8 'Ooo, 'Ooo, 8 8 8 8o8  8ooo'
+  8OOO'  8 'OoO' 'OoO' 8     8   8 Oooo0 Oooo0 8 8 8 8  8 8   8
 
 oOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOo0oOoOoOoO
 
@@ -26,11 +26,11 @@ $Words = Import-CSV -Path $Wordlist -Delimiter ";" -Header ID, Word
 For ($k = 0; $k -lt 10; $k++) {
     $Password = ""
     # Loop to generate the two words
-    For ($i = 0; $i -lt 2; $i++) { 
+    For ($i = 0; $i -lt 2; $i++) {
         $Dice = ""
         # Loop to roll the 5 dices and generate a word ID
-        For ($j = 0; $j -lt 5; $j++) { 
-            $D = Get-Random -Minimum 1 -Maximum 6 
+        For ($j = 0; $j -lt 5; $j++) {
+            $D = Get-Random -Minimum 1 -Maximum 6
             $Dice = $Dice + $D.ToString()
         }
         # Loop to retrieve words from the CSV file
@@ -38,7 +38,7 @@ For ($k = 0; $k -lt 10; $k++) {
             if ($Word.ID -eq $Dice) {
                 # Add words to the $Password variable + add capital letters to the beginning of the word
                 $Password = $Password + (Get-Culture).TextInfo.ToTitleCase($Word.Word)
-            } 
+            }
         }
     }
 
