@@ -6,7 +6,7 @@ Generate complex password with eff large wordlist
 
 Open script DicePassMkr.ps1 in text editor to edit the path of the CSV file (line 10)
 ```bash
-$Wordlist = '<Path_of_the_script>\DicePassMkr\Wordlist.csv'
+$Wordlist = "<Path_of_the_script>\DicePassMkr\Wordlist.csv"
 ```
 
 Create a shortcut on your Windows Desktop:
