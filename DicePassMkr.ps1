@@ -1,12 +1,12 @@
 ###################################################################
-#Script Name	: DicePassGen.ps1                                                                                              
-#Description	: Strong password generation script based on EFF Dice-Generated Passphrases (between 11 & 23 characters)                                                                                                                                                                      
-#Author       	: Quentin BELKACEM                                               
-#Email         	: quentin.belkacem@gmail.com                                           
+# Script Name	 : DicePassGen.ps1                                                                                              
+# Description	 : Strong password generation script based on EFF Dice-Generated Passphrases (between 11 & 23 characters)                                                                                                                                                                      
+# Author       : Quentin BELKACEM                                               
+# Email        : quentin.belkacem@gmail.com                                           
 ###################################################################
 
 # Variables
-$Wordlist = ‘<Path_of_the_script>\DicePassGen\Wordlist.csv’
+$Wordlist = ‘<Path_of_the_script>\DicePassMkr\Wordlist.csv’
 
 Write-Host -ForegroundColor DarkCyan @"
 
