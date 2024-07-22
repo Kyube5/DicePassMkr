@@ -8,6 +8,17 @@
 # Variables
 $Wordlist = ‘<Path_of_the_script>\DicePassGen\Wordlist.csv’
 
+Write-Host -ForegroundColor DarkCyan @"
+
+  8OOo.                8OOo.                   8OoO.
+  8   8  8 .oOo. .oOo. 8   O .oOo. oOOOo oOOOo 8 8 8 8  8 8OOo.
+  8   8  8 8     8ooo  8ooO' 8ooo8 'Ooo, 'Ooo, 8 8 8 8oo  8ooo'
+  8OOo'  8 'OoO' 'OoO' 8     8   8 Oooo0 Oooo0 8 8 8 8  8 8   8
+
+oOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOo0oOoOoOoO
+
+"@
+
 # Import the CSV file containing the words
 $Words = Import-CSV -Path $Wordlist -Delimiter ";" -Header ID, Word
 
@@ -44,7 +55,7 @@ For ($k = 0; $k -lt 10; $k++) {
 
     # Assembling and displaying the password in the console
     Write-Host
-    Write-Host -ForegroundColor Blue $Password$Chars$Num
+    Write-Host -ForegroundColor Cyan $Password$Chars$Num
 }
 
 Write-Host
