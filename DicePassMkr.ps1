@@ -6,7 +6,7 @@
 ###################################################################
 
 # Variables
-$Wordlist = "<Path_of_the_script>\DicePassMkr\eff_large_wordlist.csv"
+$Wordlist = "<Path_of_the_script>\DicePassMkr\Wordlist.csv"
 
 Write-Host -ForegroundColor DarkCyan @"
 
