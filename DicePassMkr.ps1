@@ -18,9 +18,6 @@
 
 #>
 
-# Variables
-$Wordlist = "<Path_of_the_script>\DicePassMkr\Wordlist.csv"
-
 Write-Host -ForegroundColor DarkCyan @"
 
   8OOo.                8OOo.                   8o.o8
@@ -31,6 +28,9 @@ Write-Host -ForegroundColor DarkCyan @"
 oOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOo0oOoOoOoO
 
 "@
+
+# Variables
+$Wordlist = "<Path_of_the_script>\DicePassMkr\Wordlist.csv"
 
 # Import the CSV file containing the words
 $Words = Import-CSV -Path $Wordlist -Delimiter ";" -Header ID, Word
