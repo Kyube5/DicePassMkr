@@ -1,9 +1,22 @@
-###################################################################
-# Script Name	 : DicePassMkr.ps1
-# Description	 : Strong password generation script based on EFF Dice-Generated Passphrases (between 11 & 23 characters)
-# Author        : Quentin BELKACEM
-# Email         : quentin.belkacem@gmail.com
-###################################################################
+<#
+
+.SYNOPSIS
+    Strong password generation script based on EFF Dice-Generated Passphrases (between 11 & 23 characters).
+
+.DESCRIPTION
+    Strong password generation script based on EFF Dice-Generated Passphrases (between 11 & 23 characters).
+    
+.NOTES
+    NAME:       DicePassMkr.ps1
+    AUTHOR:     BELKACEM Quentin
+    EMAIL:      quentin.belkacem@gmail.com
+    OWNER:      
+
+    VERSION HISTORY:
+    1.0  2024.02.14  Initial Version
+    2.0  2024.07.20  Generation of ten passwords
+
+#>
 
 # Variables
 $Wordlist = "<Path_of_the_script>\DicePassMkr\Wordlist.csv"
