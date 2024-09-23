@@ -20,10 +20,10 @@
 
 Write-Host -ForegroundColor DarkCyan @"
 
-  8OOo.                8OOo.                   8o.o8
-  8   8  8 .oOo. .oOo. 8   O .oOo. oOOOo oOOOo 8 8 8 8  8 8OOo.
-  8   8  8 8     8oo   8ooO' 8ooo8 'Ooo, 'Ooo, 8 8 8 8o8  8ooo'
-  8OOO'  8 'OoO' 'OoO' 8     8   8 Oooo0 Oooo0 8 8 8 8  8 8   8
+  8OOo.               8OOo.                   8o.o8
+  8   8 8 .oOo. .oOo. 8   O .oOo. .oOo. .oOo. 8 8 8 8  8 8OOo.
+  8   8 8 8     8oo   8ooO' 8ooo8 'Ooo. 'Ooo. 8 8 8 8o8  8ooo'
+  8OOO' 8 'OoO' 'OoO' 8     8   8 'ooo' 'ooo' 8 8 8 8  8 8   8
 
 oOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOoOo0oOoOoOoO
 
